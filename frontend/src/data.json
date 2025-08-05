@@ -1,0 +1,576 @@
+[
+    {
+        "name": "Bhushan Nerkar (389363)",
+        "shift_schedule": [
+            {
+                "date": "2025-04-01",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "public": "PUBLIC - Off due Public/Bank",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-02",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftContainer": "8:00am 4:30pm SHIFT - Shift (container) (8:30)",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-03",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-04",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-05",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-06",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-07",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-08",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-09",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-10",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-11",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-12",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-13",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-14",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-15",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-16",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-17",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-18",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-19",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-20",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-21",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-22",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-23",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-24",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-25",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-26",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-27",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-28",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-29",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            },
+            {
+                "date": "2025-04-30",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "11:00 AM"
+            }
+        ]
+    },
+    {
+        "name": "Ganesh Matre (329353)",
+        "shift_schedule": [
+            {
+                "date": "2025-04-01",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "public": "PUBLIC - Off due Public/Bank",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-02",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftContainer": "8:00am 4:30pm SHIFT - Shift (container) (8:30)",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-03",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-04",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-05",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-06",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-07",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-08",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-09",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-10",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-11",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-12",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-13",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-14",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-15",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-16",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-17",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-18",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-19",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-20",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-21",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-22",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-23",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-24",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-25",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-26",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-27",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-28",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-29",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            },
+            {
+                "date": "2025-04-30",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "7:00 AM",
+                "shiftStop": "5:00 AM"
+            }
+        ]
+    },
+    {
+        "name": "Vinod Tambe (369382)",
+        "shift_schedule": [
+            {
+                "date": "2025-04-01",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "public": "PUBLIC - Off due Public/Bank",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-02",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-03",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-04",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-05",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-06",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-07",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-08",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-09",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-10",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-11",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-12",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-13",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-14",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-15",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-16",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-17",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-18",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-19",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-20",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-21",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-22",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-23",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-24",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-25",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-26",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-27",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-28",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-29",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "Vacation": "VACA - Vacation",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            },
+            {
+                "date": "2025-04-30",
+                "title": "TMDE.LEUSHI.DHLXXV_- EMI",
+                "shiftStart": "8:00 AM",
+                "shiftStop": "6:00 AM"
+            }
+        ]
+    }
+]
