@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const stateContext = createContext();
 
@@ -9,7 +9,6 @@ export const StateProvider = ({ children }) => {
     const [subCategory, setSubCategory] = useState();
     const [setTrackingEditSegment, showTrackingEditSegment] = useState(false);
     const [showDWM, setShowDWM] = useState(false);
-    const [showDateWeekMonth, setShowDateWeekMonth] = useState('weeks')
     const [selectedDate, setSelectedDate] = useState('');
     const [selectedEmployee, setSelectedEmployee] = useState('');
     const [toggleSideBar, setToggleSideBar] = useState(false);
@@ -36,15 +35,25 @@ export const StateProvider = ({ children }) => {
 
 
     //For Navbar Day, Week and Month
-    const handleTabClick = (tab) => {
-        setShowDateWeekMonth((prevTab) => (prevTab === tab ? tab : tab));
-    };
+    // Load initial value from localStorage
+    const initialView = localStorage.getItem("showDateWeekMonth") || "weeks";
+    const [showDateWeekMonth, setShowDateWeekMonth] = useState(initialView)
+
+    // Save to localStorage on change
+    useEffect(() => {
+        localStorage.setItem("showDateWeekMonth", showDateWeekMonth);
+    }, [showDateWeekMonth]);
+
+
+    // const handleTabClick = (view) => {
+    //     setShowDateWeekMonth(view);
+    // };
 
     return (
         <stateContext.Provider value={{
             isAuth, setIsAuth, category, setCategory, db, setDb,
             subCategory, setSubCategory, setTrackingEditSegment, showTrackingEditSegment,
-            showDWM, setShowDWM, handleTabClick, showDateWeekMonth, setShowDateWeekMonth,
+            showDWM, setShowDWM, showDateWeekMonth, setShowDateWeekMonth,
             selectedDate, setSelectedDate, selectedEmployee, setSelectedEmployee,
             toggleSideBar, setToggleSideBar, ewfmData, setEwfmData, timeZone, setTimeZone,
             triggerSave, requestSave, resetSave,
