@@ -237,6 +237,6 @@ export default function HolidayFactorsGeneralHoliday({ setShowPopUp, selectedGro
                     </fieldset>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }

@@ -1,6 +1,122 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FaRegSquarePlus } from 'react-icons/fa6'
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { FiMinusSquare } from "react-icons/fi";
+import { FaCheck } from 'react-icons/fa';
+import UserRightClickMenu from './PopUp/UserRightClickMenu';
+import User_General_Access from './PopUp/User_General_Access';
+
+const check = <FaCheck />
+
+const userData = [
+    {
+        "Employee": "Employee",
+        "Users": [
+            {
+                "User Name": "DEPEI_ZHANG",
+                "Alternate User Name": "",
+                "Active": check,
+                "Logged In": "",
+                "First Day of the Week": "Saturday",
+                "First Name": "De Pei",
+                "Last Name": "Zhang",
+                "Time Zone": "(UTC+0...",
+                "Secondary Login ID": "…",
+                "ID": "",
+                "Active (Icon)": check,
+                "Code 1": "CCC...",
+                "Description 1": "CCC ESG T...",
+                "Code 2": "CC...",
+                "Description 2": "For age..."
+            },
+            {
+                "User Name": "DEPREM1",
+                "Alternate User Name": "",
+                "Active": check,
+                "Logged In": "",
+                "First Day of the Week": "Saturday",
+                "First Name": "Michel",
+                "Last Name": "Deprez",
+                "Time Zone": "(UTC+1...",
+                "Secondary Login ID": "…",
+                "ID": "",
+                "Active (Icon)": check,
+                "Code 1": "TS",
+                "Description 1": "All Tech Su...",
+                "Code 2": "HE...",
+                "Description 2": "Generic"
+            },
+            {
+                "User Name": "DIPANJANA...",
+                "Alternate User Name": "",
+                "Active": check,
+                "Logged In": "",
+                "First Day of the Week": "Saturday",
+                "First Name": "Dipanjana",
+                "Last Name": "Kundu",
+                "Time Zone": "(UTC+1...",
+                "Secondary Login ID": "…",
+                "ID": "",
+                "Active (Icon)": check,
+                "Code 1": "SHR...",
+                "Description 1": "Owned by ...",
+                "Code 2": "AN...",
+                "Description 2": "ANZ SA ..."
+            },
+            {
+                "User Name": "DUPONS",
+                "Alternate User Name": "",
+                "Active": check,
+                "Logged In": "",
+                "First Day of the Week": "Saturday",
+                "First Name": "Sylvain",
+                "Last Name": "Dupont",
+                "Time Zone": "(UTC+0...",
+                "Secondary Login ID": "…",
+                "ID": "",
+                "Active (Icon)": check,
+                "Code 1": "TW...",
+                "Description 1": "Global Pow...",
+                "Code 2": "T...",
+                "Description 2": "Global P..."
+            }
+        ]
+    },
+    {
+        "Employee": "Regular_User",
+        "Users": [
+            {
+                "User Name": "DEPEI_ZHANG",
+                "Alternate User Name": "",
+                "Active": check,
+                "Logged In": "",
+                "First Day of the Week": "Saturday",
+                "First Name": "De Pei",
+                "Last Name": "Zhang",
+                "Time Zone": "(UTC+0...",
+                "Secondary Login ID": "…",
+                "ID": "",
+                "Active (Icon)": check,
+                "Code 1": "CCC...",
+                "Description 1": "CCC ESG T...",
+                "Code 2": "CC...",
+                "Description 2": "For age..."
+            },
+        ]
+    },
+]
 
 export default function Users() {
+
+    const [openRows, setOpenRows] = useState({});
+
+    const handleToggle = (index) => {
+        setOpenRows((prev) => ({
+            ...prev,
+            [index]: !prev[index] // toggle only that index
+        }));
+    };
+
     return (
         <>
             <div className="">
@@ -41,7 +157,7 @@ export default function Users() {
                                 </div>
                             </div>
                             <div className='px-2 border-b-2 border-gray-400 shadow-md shadow-white py-2'>
-                                <button className="bg-gray-200 border border-gray-300  rounded-md px-6 py-1">
+                                <button className="bg-gray-200 border-2 border-gray-300  rounded-sm px-6 py-1 focus:border-2 focus:border-blue-500">
                                     Retrieve
                                 </button>
                             </div>
@@ -111,17 +227,41 @@ export default function Users() {
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody className='text-sm'>
-                                    <tr className='border-t-2'>
-                                        <td
-                                            colSpan="15"
-                                            className=" p-4 text-center text-gray-500"
-                                        >
-                                            <p className='font-semibold text-gray-500'>
-                                                No data to display
-                                            </p>
-                                        </td>
-                                    </tr>
+                                <tbody className='text-sm '>
+                                    {userData.map((dataObj, i) => (
+                                        <React.Fragment key={i}>
+
+                                            {/* First, display the Forecasting_Code */}
+                                            <tr className='border-b-2 border-blue-500'>
+                                                <td colSpan={15} className="border border-gray-300 p-2" onClick={() => handleToggle(i)}>
+                                                    <div className='flex items-center space-x-4 text-blue-500 font-bold pt-4'>
+                                                        <div className='flex items-center text-blue-500 font-bold'>
+                                                            {
+                                                                openRows[i] ? <FiMinusSquare className='w-4 h-4' /> : <FaRegSquarePlus className='w-4 h-4' />
+                                                            }
+                                                        </div>
+                                                        <div className='flex items-center space-x-2 text-blue-500 font-bold'>
+                                                            User
+                                                            <MdOutlineKeyboardDoubleArrowRight className='w-4 h-4' />
+                                                            Type : {dataObj.Employee} ({dataObj.Users.length})
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            {/* Then map through the Users array */}
+                                            {openRows[i] && dataObj.Users.map((user, j) => (
+                                                <tr key={j} className={`text-left  ${j % 2 == 0 ? "bg-yellow-100" : ""} hover:bg-gray-200 `}>
+                                                    {Object.entries(user).map(([key, value], k) => (
+                                                        <td key={k} className={`${value === check ? 'text-green-500' : ''} border border-gray-300 px-2 py-1`}>
+                                                            {value}
+                                                        </td>
+                                                    ))}
+                                                </tr>
+                                            ))}
+                                        </React.Fragment>
+                                    ))}
+
                                 </tbody>
                             </table>
                         </div>
@@ -134,7 +274,10 @@ export default function Users() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
+
+            {/* <UserRightClickMenu /> */}
+            <User_General_Access />
         </>
     )
 }
