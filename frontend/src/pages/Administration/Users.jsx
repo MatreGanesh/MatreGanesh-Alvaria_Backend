@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaRegSquarePlus } from 'react-icons/fa6'
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { FiMinusSquare } from "react-icons/fi";
@@ -109,6 +109,13 @@ const userData = [
 export default function Users() {
 
     const [openRows, setOpenRows] = useState({});
+    const [selectedUser, setSelectedUser] = useState(null);
+    const [showMenu, setShowMenu] = useState(false);
+    const [selectedRow, setSelectedRow] = useState({ groupIndex: null, userIndex: null });
+    const [contextMenu, setContextMenu] = useState({ visible: false, x: 0, y: 0 });
+    const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
+    const [showGeneralAccess, setShowGeneralAccess] = useState(false);
+
 
     const handleToggle = (index) => {
         setOpenRows((prev) => ({
@@ -116,6 +123,36 @@ export default function Users() {
             [index]: !prev[index] // toggle only that index
         }));
     };
+
+
+    // Handle single click and right click
+    const handleRowClick = (groupIdx, userIdx) => {
+        setSelectedRow({ groupIndex: groupIdx, userIndex: userIdx });
+    };
+
+    const handleRightClick = (e, groupIdx, userIdx) => {
+        e.preventDefault(); // prevent default browser context menu
+        setSelectedRow({ groupIndex: groupIdx, userIndex: userIdx });
+        setContextMenu({ visible: true, x: e.clientX, y: e.clientY });
+        setSelectedUser(user);
+        setMenuPosition({ x: e.clientX, y: e.clientY });
+        setShowMenu(true);
+    };
+
+
+    const handleAddClick = () => {
+        setShowMenu(false);
+        setShowGeneralAccess(true);
+    };
+
+
+    //Close the menu on outside click
+    useEffect(() => {
+        const handleClickOutside = () => setContextMenu({ ...contextMenu, visible: false });
+        window.addEventListener("click", handleClickOutside);
+        return () => window.removeEventListener("click", handleClickOutside);
+    }, [contextMenu]);
+
 
     return (
         <>
@@ -251,7 +288,14 @@ export default function Users() {
 
                                             {/* Then map through the Users array */}
                                             {openRows[i] && dataObj.Users.map((user, j) => (
-                                                <tr key={j} className={`text-left  ${j % 2 == 0 ? "bg-yellow-100" : ""} hover:bg-gray-200 `}>
+                                                <tr
+                                                    key={j}
+                                                    onClick={() => handleRowClick(i, j)}
+                                                    onContextMenu={(e) => handleRightClick(e, i, j)}
+                                                    className={`text-left cursor-pointer 
+            ${selectedRow.groupIndex === i && selectedRow.userIndex === j ? "bg-blue-400 text-white font-semibold" : j % 2 === 0 ? "bg-yellow-100 hover:bg-gray-200" : "hover:bg-gray-200"} 
+            `}
+                                                >
                                                     {Object.entries(user).map(([key, value], k) => (
                                                         <td key={k} className={`${value === check ? 'text-green-500' : ''} border border-gray-300 px-2 py-1`}>
                                                             {value}
@@ -259,6 +303,7 @@ export default function Users() {
                                                     ))}
                                                 </tr>
                                             ))}
+
                                         </React.Fragment>
                                     ))}
 
@@ -276,8 +321,33 @@ export default function Users() {
                 </div>
             </div >
 
-            {/* <UserRightClickMenu /> */}
-            <User_General_Access />
+            {
+                contextMenu.visible && (
+                    <div
+                        style={{
+                            position: "fixed",
+                            top: contextMenu.y,
+                            left: contextMenu.x,
+                            background: "white",
+                            border: "1px solid gray",
+                            zIndex: 1000
+                        }}
+                    >
+                        <UserRightClickMenu
+                            position={menuPosition}
+                            onAdd={handleAddClick}
+                            onClose={() => setShowMenu(false)}
+                            user={selectedUser} />
+                    </div>
+                )
+            }
+
+            {showGeneralAccess && (
+                <User_General_Access
+                    user={selectedUser}
+                    onClose={() => setShowGeneralAccess(false)}
+                />
+            )}
         </>
     )
 }

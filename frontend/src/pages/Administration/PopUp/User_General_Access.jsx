@@ -10,7 +10,7 @@ import { IoClose } from 'react-icons/io5'
 import { PiDotsThreeBold, PiDotsThreeOutlineFill } from 'react-icons/pi'
 import { VscChromeMaximize } from 'react-icons/vsc'
 
-export default function User_General_Access() {
+export default function User_General_Access({ user, onClose }) {
 
     const [toggleTabs, setToggleTabs] = useState('General');
 
@@ -34,7 +34,7 @@ export default function User_General_Access() {
                     <div className="flex gap-8">
                         <HiMiniMinus className='w-4 h-4' />
                         <VscChromeMaximize className='w-4 h-4' />
-                        <IoClose className='w-4 h-4' />
+                        <IoClose className='w-4 h-4' onClick={onClose} />
                     </div>
                 </div>
                 {/* <!-- Menu bar --> */}
@@ -118,6 +118,7 @@ export default function User_General_Access() {
                                 <div className='w-[420px] flex items-center gap-1 border border-gray-300 px-0.5'>
                                     <input id='user'
                                         className="rounded-sm text-sm w-full text-gray-500 px-1 py-[2px] truncate focus:bg-yellow-300/80"
+                                        defaultValue={JSON.stringify(user, null, 2)}
                                     />
                                 </div>
                             </div>

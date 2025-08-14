@@ -6,9 +6,15 @@ import { TbSitemap } from "react-icons/tb";
 import { GrCopy } from "react-icons/gr";
 import { FaRegEdit } from "react-icons/fa";
 
-export default function UserRightClickMenu() {
+export default function UserRightClickMenu({ position, onAdd, onClose, user }) {
     return (
-        <div className="z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  shadow-md shadow-black">
+        <div className="z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  shadow-md shadow-black" style={{
+            top: position.y,
+            left: position.x,
+            background: "white",
+            border: "1px solid gray",
+            zIndex: 1000
+        }}>
             {/* <TrackingEdit /> */}
             <div className="flex justify-center relative h-auto  w-[300px] bg-[#fff] p-1 shadow-md text-[13px]  border border-blue-400 font-sans text-black select-none">
 
@@ -147,7 +153,10 @@ export default function UserRightClickMenu() {
                                 <button className='absolute left-[7px] flex items-center justify-center'>
                                     <TbSitemap className='w-4 h-4 rotate-90 text-blue-500' />
                                 </button>
-                                <button className="w-full text-left px-3 py-1.5 flex justify-between items-center" type="button">
+                                <button className="w-full text-left px-3 py-1.5 flex justify-between items-center" type="button"
+                                    onClick={() => {
+                                        onAdd();
+                                    }}>
                                     <span>Add...</span>
                                     <span className="text-black text-xs font-semibold" />
                                 </button>
